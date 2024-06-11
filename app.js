@@ -14,7 +14,7 @@ if (typeof placesRoutes !== 'function') {
 }
 
 // Use the placesRoutes for all requests
-app.use(placesRoutes);
+app.use("/api/places", placesRoutes);
 
 // Error handling for unsupported routes
 app.use((req, res, next) => {
